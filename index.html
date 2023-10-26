@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/webcam-easy/dist/webcam-easy.min.js"
+    ></script>
+  </head>
+  <link rel="stylesheet" href="style.css" />
+  <body>
+    <div class="contentarea">
+      <h1>form Login</h1>
+      <div class="form-info">
+        <div class="input-form">
+          <label for="name">name:</label>
+          <input id="name" placeholder="John" />
+          <label for="family">family:</label>
+          <input id="family" placeholder="Doe" />
+          <div class="btn">
+            <button id="load-camera" onclick="loadCamera()">load camera</button>
+            <button id="startbutton">Take photo</button>
+            <button id="clearbutton" onclick="clearbtn()">clear photo</button>
+          </div>
+        </div>
+        <div class="canvas-form">
+          <canvas id="canvas"></canvas>
+        </div>
+      </div>
+
+      <div class="camera">
+        <video id="video">Video stream not available.</video>
+      </div>
+    </div>
+  </body>
+  <script src="takePicture.js"></script>
+</html>
